@@ -1,21 +1,17 @@
 #include<iostream>;
 #include<string>;
 #include"HelperForStrings.h";
+#include"Math.h";
 
 int main()
 {
-	std::cout << "Enter your word:";
-	HelperForStrings HFS;
-	std::getline(std::cin, HFS.Word);
-
-	std::cout << "Your word:";
-	HFS.Print();
-
-	std::cout << "Length of your word:";
-	HFS.Length();
-
-	std::cout << "Enter number of symbol: ";
-	unsigned short x;
+	Math Class;
+std:cout << "Enter N: ";
+	int N;
+	std::cin >> N;
+	Class.PrintEven(N);
+	std::cout << "Enter 0 if you want to output even numbers, 1 if odd: ";
+	bool x;
 	std::cin >> x;
-	HFS.Symbol(x - 1); //потомучто с++ начинает подсчет с нуля
+	Class.PrintYour(x, N);
 }
