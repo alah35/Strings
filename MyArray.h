@@ -47,6 +47,7 @@ public:
 		{
 			for (int j = 0; j < M; j++)
 			{
+				std::cout.width(3);
 				std::cout << Matrix[i][j] <<" ";
 			}
 			std::cout << "\n";
